@@ -32,7 +32,7 @@ Audio feedback plays `start.wav` and `end.wav` on record start/stop. Transcribed
 
 ## Configuration
 
-Edit the `__main__` block in `whisper_asr.py`:
+Edit the `__main__` block in `my-whisper.py`:
 
 - `model_name` — Whisper model size (`tiny`, `base`, `small`, `medium`, `large`)
 - `hotkey` — key combination (e.g. `ctrl+alt+r`, `cmd+shift+s`)
