@@ -30,6 +30,22 @@ python my-whisper.py
 
 Audio feedback plays `start.wav` and `end.wav` on record start/stop. Transcribed text is automatically copied to the paste buffer.
 
+## Transcribe a WAV File
+
+Use `transcribe.py` to extract a transcript from an existing WAV file:
+
+```bash
+source ./env/bin/activate
+python transcribe.py input.wav output.txt
+```
+
+Options:
+
+- `--model` — Whisper model size (`tiny`, `base`, `small`, `medium`, `large`, default: `base`)
+- `--chunk-minutes` — max chunk length in minutes for large files (default: `20`)
+
+Large files are automatically split into overlapping chunks so Whisper can process them reliably.
+
 ## Configuration
 
 Edit the `__main__` block in `my-whisper.py`:
